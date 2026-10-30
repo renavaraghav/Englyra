@@ -1,0 +1,6 @@
+# A tiny arithmetic example.
+Let price be 12
+Set quantity to 4
+Let total be price times quantity
+Say "Total:"
+Show total
