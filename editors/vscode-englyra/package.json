@@ -1,0 +1,48 @@
+{
+  "name": "englyra-language",
+  "displayName": "Englyra Language Support",
+  "description": "Syntax highlighting and snippets for the Englyra English-first programming language.",
+  "version": "0.2.0",
+  "publisher": "renavaraghav",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "englyra",
+    "language",
+    "english-first",
+    "programming"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "englyra",
+        "aliases": [
+          "Englyra",
+          "englyra"
+        ],
+        "extensions": [
+          ".eng"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "englyra",
+        "scopeName": "source.englyra",
+        "path": "./syntaxes/englyra.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "englyra",
+        "path": "./snippets/englyra.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "scopeName": "source.englyra",
+  "patterns": [
+    {"include": "#comments"},
+    {"include": "#strings"},
+    {"include": "#numbers"},
+    {"include": "#block-words"},
+    {"include": "#commands"},
+    {"include": "#comparison-words"},
+    {"include": "#arithmetic-words"}
+  ],
+  "repository": {
+    "comments": {"name": "comment.line.number-sign.englyra", "match": "#.*$"},
+    "strings": {
+      "name": "string.quoted.double.englyra",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [{"name": "constant.character.escape.englyra", "match": "\\\\."}]
+    },
+    "numbers": {"name": "constant.numeric.englyra", "match": "(?<![A-Za-z_])-?\\b\\d+(?:\\.\\d+)?\\b"},
+    "block-words": {"name": "keyword.control.englyra", "match": "(?i)\\b(?:if|otherwise|end\\s+if|repeat|end\\s+repeat|times)\\b"},
+    "commands": {"name": "keyword.other.englyra", "match": "(?i)\\b(?:let|be|set|to|say|show|print)\\b"},
+    "comparison-words": {
+      "name": "keyword.operator.comparison.englyra",
+      "match": "(?i)\\b(?:is\\s+not\\s+equal\\s+to|is\\s+greater\\s+than\\s+or\\s+equal\\s+to|is\\s+less\\s+than\\s+or\\s+equal\\s+to|is\\s+equal\\s+to|is\\s+greater\\s+than|is\\s+less\\s+than|is\\s+at\\s+least|is\\s+at\\s+most|equals)\\b"
+    },
+    "arithmetic-words": {"name": "keyword.operator.arithmetic.englyra", "match": "(?i)\\b(?:plus|minus|times|divided\\s+by)\\b"}
+  }
+}

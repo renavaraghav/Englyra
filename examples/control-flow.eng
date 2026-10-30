@@ -1,0 +1,11 @@
+# Nested control flow combines decisions and counted loops.
+Let score be 0
+
+Repeat 5 times
+  Set score to score plus 20
+  If score is at least 60
+    Say "Target reached"
+  Otherwise
+    Say "Keep going"
+  End If
+End Repeat

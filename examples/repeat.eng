@@ -1,0 +1,7 @@
+# Repeat a block a fixed number of times.
+Let counter be 0
+
+Repeat 3 times
+  Set counter to counter plus 1
+  Say counter
+End Repeat

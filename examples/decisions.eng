@@ -1,0 +1,8 @@
+# Englyra can choose a branch using a clear comparison.
+Let score be 82
+
+If score is at least 50
+  Say "You passed!"
+Otherwise
+  Say "Try again — you can do it."
+End If
